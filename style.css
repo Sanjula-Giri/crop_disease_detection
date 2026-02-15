@@ -1,0 +1,83 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #198754 0%, #20c997 100%);
+    color: white;
+    padding-top: 80px;
+}
+
+/* Upload Area */
+.upload-area {
+    border: 3px dashed #198754;
+    border-radius: 15px;
+    padding: 60px 20px;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.upload-area:hover {
+    border-color: #20c997;
+    background: #e9ecef;
+}
+
+.upload-icon i {
+    font-size: 5rem;
+    color: #198754;
+}
+
+/* Images */
+#previewImage,
+#resultImage {
+    max-height: 400px;
+    object-fit: contain;
+    width: 100%;
+}
+
+/* Cards */
+.card {
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Progress Bars */
+.progress {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 100px;
+    }
+    
+    .upload-area {
+        padding: 40px 15px;
+    }
+    
+    .upload-icon i {
+        font-size: 3rem;
+    }
+}
